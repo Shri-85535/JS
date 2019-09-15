@@ -23,7 +23,8 @@ JS control statements also known as control structure or flow control statement 
 */
 
 /*
-***if-else Example***
+
+----------------------------------------------if-else Example---------------------------------------------
 Q1) Find weather number is even or odd
 Q2) Find if a number is positive, negative or 0
 Q3) Find if a number is positive & even
@@ -75,5 +76,48 @@ else
     }
 
 //We can also use "&&" eg: if (z > 0 && z % 2 == 0)
+/*-------------------------------------Switch Case Example------------------------------------------------
+(Q1) Find the day of week by accepting its number
+eg 1 -> Sunday, 2 -> Monday etc
+*/
+
+var day = 1;
+switch(day)
+{
+    case 1:
+        document.write("<h2>Sunday</h2>");
+        break;
+    case 2:
+        document.write("<h2>Monday</h2>");
+        break;
+    case 3:
+        document.write("<h2>Tuesday</h2>");
+        break;
+    case 4:
+        document.write("<h2>Wednesday</h2>");
+        break;
+    case 5:
+        document.write("<h2>Thursday</h2>");
+        break;
+    case 6:
+        document.write("<h2>Friday</h2>");
+        break;
+    case 7:
+        document.write("<h2>Saturday</h2>");
+        break;
+    default:
+        document.write("<h2>Wrong Input!</h2>");
+}
 </script>
+
+
+
+
+
+
+
+
+
+
+
 
