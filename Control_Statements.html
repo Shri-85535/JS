@@ -21,6 +21,59 @@ JS control statements also known as control structure or flow control statement 
 (8) for ... in loop
 *************************************
 */
+
+/*
+***if-else Example***
+Q1) Find weather number is even or odd
+Q2) Find if a number is positive, negative or 0
+Q3) Find if a number is positive & even
+*/
+document.write("<h1>If-Else Control Statements</h1>")
+
+//Q1) Find weather number is even or odd
+var x = 6;
+if(x % 2 == 0)
+    {
+        document.write("<h3>Even Number </h3>");
+    }
+else
+    {
+        document.write("<h3>ODD Number </h3>");
+    }
+
+//Q2) Find weather number is even or odd
+var y = 2;
+if(y > 0)
+    {
+        document.write("<h3>Positive</h3>");
+    }
+else if(y < 0)
+    {
+        document.write("<h3>Negative</h3>");
+    }
+else
+    {
+        document.write("<h3>Number is neither positive or negative</h3>");
+    }
+
+//Q3) Find if a number is positive & even
+var z = 8;
+if(z > 0)
+    {
+        document.write("<h3>Positive</h3>");
+        if(z % 2 == 0)
+        {
+            document.write("<h3>Even Number</h3>");
+        }
+        else{
+            document.write("<h3>Number is Positive but it is ODD");
+            }
+    }
+else
+    {
+        document.write("<h3>Number is Negative</h3>");
+    }
+
+//We can also use "&&" eg: if (z > 0 && z % 2 == 0)
 </script>
-<p></p>
 
