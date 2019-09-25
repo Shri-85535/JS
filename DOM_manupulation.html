@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>DOM Manupulations In JavaScript</title>
+    </head>
+    <body>
+        <input id="text1" placeholder="Username">
+        <br>
+        <input type="password" id="text2" placeholder="Password">
+        <br>
+        <button onclick="fn1()" id="btn1">Click Me</button>
+        <br>
+        <br>
+        <button onclick="fn2()" id="btn1">Click Me</button>
+        <h2 id="heading2" >Some Random Text</h2>
+
+    </body>
+</html>
+<script type="text/javascript">
+/*
+DOM Manupulations are when we use JS code to perform some activity on the HTML document.
+
+JS used the DOM to access differentn elementn on the website and perform specific task like validation, changes, animations, functions etc
+
+*/
+function fn1()
+    {
+        var str = document.getElementById("text2").value;
+        alert("Your passowrd is : " + str);
+    }
+function fn2()
+    {
+        document.getElementById("heading2").innerHTML = "Akash Kumar"
+    }
+
+</script>
+

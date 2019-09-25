@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>User Input In JavaScripts</title>
+    </head>
+    <body>
+    <p>************************************</p>
+    <p>User Input by Radio button</p>
+    <input id="rd1" name="grp1" type="radio" value="Akash">Akash</input><br>
+    <input id="rd2" name="grp1" type="radio" value="Shri">Shri</input><br>
+    <button onclick="fun1()">Click Me</button>
+    <p>************************************</p><br>
+    <p>User Input by Select Box(Dropdownbox)</p>
+    <select id="selectbox">
+    <option value="Shri">Shri</option>
+    <option value="Akash">Akash</option>
+    <option value="OX">OX</option>
+    </select>
+    <br><br>
+    <button onclick="fun2()">Click Me</button>
+
+    <p>************************************</p>
+    </body>
+</html>
+<script type="text/javascript">
+function fun1()
+    {
+        var rd1 = document.getElementById("rd1");
+        var rd2 = document.getElementById("rd2");
+    
+        if(rd1.checked == true)
+            alert(rd1.value);
+        else if(rd2.checked == true)
+            alert(rd2.value);
+        else
+            alert("Nothing is selected");
+    }
+
+function fun2()
+    {
+        var select = document.getElementById("selectbox");
+        alert(select.options[select.selectedIndex].value)
+    
+    }
+
+</script>
+
+

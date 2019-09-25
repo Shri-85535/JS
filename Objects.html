@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Objects In JavaScript</title>
+    </head>
+    <body></body>
+</html>
+<script type="text/javascript">
+/*
+JavaScript is an Object Oriented programming
+*/
+var car = {
+    car_Brand:'Tesla',
+    car_Model:'Tesla',
+    Price:35000,
+
+    teslaAutopilot : function()
+        {
+            document.write("<h2>This car is Autopilot</h2>")
+        }
+    }
+document.write("<h2>"+car.car_Brand+"</h2>")
+car.teslaAutopilot();
+
+//Type 2 :
+
+function Cars(car_brand, car_model, price)
+    {
+        this.car_brand = car_brand;
+        this.car_model = car_model;
+        this.price = price;
+        this.teslaAutopilot = function()
+        {
+            document.write("<h2>This car has Autopilot<h2>")
+        }
+    }
+
+var c1 = new Cars("Tesla", "Model 3", 35000)
+var c2 = new Cars("Tesla", "Model 7", 45000)
+document.write("<h2>"+c2.car_model+"</h2>")
+</script>
+

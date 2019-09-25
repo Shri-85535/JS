@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Scope of Variables in JavaScript</title>
+    </head>
+    <body></body>
+</html>
+<script type="text/javascript">
+/*
+In JavaScript we have 2 types of scopes
+(1) Global Variables
+(2) Global Variables
+Depends upon where you create your variables
+*/
+var b = 6; //This is a Global Variable
+
+function myFunction()
+    {
+        var a = 5; //This is a Local Variable
+        document.write("<h2>"+a+"</h2>");
+        document.write("<h2>"+b+"</h2>");
+    }
+myFunction();
+document.write("<h2>"+a+"</h2>"); //This won't print anything
+
+/*
+As the above example, Global variables can be called anywhere inside the programmem, whereas local variable can be called only inside the function or methods.
+*/
+</script>
+
